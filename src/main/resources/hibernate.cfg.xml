@@ -24,10 +24,8 @@
 		 -->
 
 		<!-- Include all the mapping pojo classes -->
-		<mapping class="com.hbrnt.pojo.Address"/>
-   		<mapping class="com.hbrnt.pojo.Customer" />
-		<mapping class="com.hbrnt.pojo.Orders_Products" />
-		<mapping class="com.hbrnt.pojo.Orders" />
-		<mapping class="com.hbrnt.pojo.Address"/>
+   		<mapping class="com.task20.springMvc.pojo.Customer" />
+		<mapping class="com.task20.springMvc.pojo.Orders_Products" />
+		<mapping class="com.task20.springMvc.pojo.Orders" />
 	</session-factory> 
 </hibernate-configuration>

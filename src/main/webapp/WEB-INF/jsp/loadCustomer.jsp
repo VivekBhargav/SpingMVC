@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method = "post" action="loadCustomer">
+<form method = "get" action="loadCustomer">
 <h3>Enter Customer id: </h3><input type="text"><br/>
 <button class="btn btn-lg btn-primary btn-block" type="submit">Load</button>
 </form>

@@ -1,5 +1,7 @@
 package com.task20.springMvc.service;
 
+import com.task20.springMvc.pojo.Customer;
+
 public interface CustomerServ {
 	void addCustomer();
 	void deleteCustomer();
@@ -8,4 +10,5 @@ public interface CustomerServ {
 	void getCustomers();
 	void getMonthlySales();
 	void getReport();
+	Customer getSampleCustomer();
 }

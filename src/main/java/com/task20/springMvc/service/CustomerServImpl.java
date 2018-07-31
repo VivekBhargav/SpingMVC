@@ -7,18 +7,16 @@ import java.util.Scanner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.task20.springMvc.dao.CustomerDAO;
+import com.task20.springMvc.dao.ICustomerDAO;
 import com.task20.springMvc.pojo.Address;
 import com.task20.springMvc.pojo.Customer;
-
-
 
 @Service
 public class CustomerServImpl implements CustomerServ{
 	static Scanner scan = new Scanner(System.in);
 	
 	@Autowired
-	CustomerDAO customerDao;
+	ICustomerDAO customerDao;
 
 	@Override
 	public void getCustomers() {
@@ -78,6 +76,13 @@ public class CustomerServImpl implements CustomerServ{
 		System.out.println("Enter Month: ");
 		int month = scan.nextInt();
 		customerDao.getReport(month).stream().forEach(System.out::println);
+	}
+
+	@Override
+	public Customer getSampleCustomer() {
+        Customer customer = new Customer("Mr.", "Vivek", "K", "B", "vivek@gmail.com", "IMCS", "ViVek", "Vivek B K",
+				"nothing");
+		return customer;
 	}
 
 }
